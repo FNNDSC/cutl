@@ -9,7 +9,7 @@
     "build": "parcel build index.html"
   },
   "keywords": [],
-  "author": "Sandip <sandipsamal117@gmail.com>",
+  "author": "FNNDSC <dev@babyMRI.org>",
   "license": "ISC",
   "dependencies": {
     "@fnndsc/chrisapi": "^1.6.1",
