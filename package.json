@@ -1,30 +1,39 @@
 {
-  "name": "cutl",
-  "version": "0.1.0",
-  "description": "ChRIS utility JS library",
-  "main": "src/cutl.js",
+  "name": "chris-utility",
+  "version": "1.1.6",
+  "description": "This project has been created using **webpack-cli**, you can now run",
+  "main": "dist/node/main.js",
+  "browser": "dist/web/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
-  },
-  "keywords": [],
-  "author": "FNNDSC <dev@babyMRI.org>",
-  "license": "ISC",
-  "dependencies": {
-    "@fnndsc/chrisapi": "^1.6.1",
-    "file-saver": "^2.0.5",
-    "swift-client": "^0.2.0"
-  },
-  "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FNNDSC/cutl.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/FNNDSC/cutl/issues"
   },
-  "homepage": "https://github.com/FNNDSC/cutl#readme"
+  "homepage": "https://github.com/FNNDSC/cutl#readme",
+  "dependencies": {
+    "@fnndsc/chrisapi": "^1.9.7",
+    "file-saver": "^2.0.5",
+    "webpack-merge": "^4.2.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/register": "^7.15.3",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
+  }
 }
