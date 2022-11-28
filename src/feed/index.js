@@ -1,10 +1,9 @@
-import Client from "@fnndsc/chrisapi";
 import FileSaver from "file-saver";
 import pkg from "@fnndsc/chrisapi";
 
-const { Request, Feed } = pkg;
+const { Request, Feed, Client } = pkg;
 
-export class Cutl {
+export class FeedClass {
   //default constructor
   constructor() {
     this.client = null;
@@ -79,7 +78,7 @@ export class Cutl {
     //Upload all files to CUBE
     var uploadDir = this.user + "/uploads/" + Date.now() + "/";
     for (var f = 0; f < files.length; f++) {
-      var upload = await this.client.uploadFile(
+      await this.client.uploadFile(
         {
           upload_path: uploadDir + files[f].name,
         },
@@ -838,4 +837,4 @@ export class Cutl {
   }
 }
 
-export const cujs = Cutl;
+export const feed = FeedClass;
